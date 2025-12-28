@@ -13,9 +13,7 @@
   overflow-x: auto;
   padding-bottom: 1rem;
 }
-.screenshot-rail::-webkit-scrollbar {
-  height: 10px;
-}
+.screenshot-rail::-webkit-scrollbar { height: 10px; }
 .screenshot-rail::-webkit-scrollbar-thumb {
   background: rgba(255,255,255,0.25);
   border-radius: 999px;
@@ -56,30 +54,32 @@
   <div class="screenshot-rail">
     <div class="flex flex-col items-center gap-3">
       <span class="text-sm font-semibold">1. Install Tampermonkey</span>
-      <img src="/images/tampermonkey.png">
+      <img src="/images/tampermonkey.png" alt="Install Tampermonkey">
     </div>
     <div class="flex flex-col items-center gap-3">
       <span class="text-sm font-semibold">2. Open Extensions</span>
-      <img src="/images/puzzle.png">
+      <img src="/images/puzzle.png" alt="Open Extensions">
     </div>
     <div class="flex flex-col items-center gap-3">
       <span class="text-sm font-semibold">3. Pin Tampermonkey</span>
-      <img src="/images/menu.png">
+      <img src="/images/menu.png" alt="Pin Tampermonkey">
     </div>
     <div class="flex flex-col items-center gap-3">
       <span class="text-sm font-semibold">4. Manage Extensions</span>
-      <img src="/images/manage.png">
+      <img src="/images/manage.png" alt="Manage Extensions">
     </div>
     <div class="flex flex-col items-center gap-3">
       <span class="text-sm font-semibold text-yellow-300">5. Allow User Scripts</span>
-      <img src="/images/allow.png">
+      <img src="/images/allow.png" alt="Allow User Scripts">
     </div>
   </div>
 </section>
 
 <section>
   <h2 class="text-2xl font-extrabold mb-4">Scripts</h2>
+
   <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
     <article class="rounded-2xl border border-white/10 bg-white/5 p-5">
       <h3 class="text-lg font-extrabold">MD AutoUploader</h3>
       <p class="mt-2 text-sm text-slate-300">
@@ -90,6 +90,18 @@
         Install
       </a>
     </article>
+
+    <article class="rounded-2xl border border-white/10 bg-white/5 p-5">
+      <h3 class="text-lg font-extrabold">MyDesigns – Theme Chooser</h3>
+      <p class="mt-2 text-sm text-slate-300">
+        Adds a theme picker to MyDesigns so you can quickly switch color styles (and keep your eyes happy).
+      </p>
+      <a href="https://github.com/lavenderdragondesign/lddscripts/raw/refs/heads/main/MyDesigns%20%E2%80%93%20Theme%20Chooser.user.js" target="_blank" rel="noopener"
+         class="mt-4 inline-flex w-full justify-center rounded-xl bg-emerald-500 px-4 py-3 font-extrabold text-slate-950 hover:bg-emerald-400">
+        Install
+      </a>
+    </article>
+
   </div>
 </section>
 
