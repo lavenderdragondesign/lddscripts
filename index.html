@@ -1,134 +1,106 @@
+
 <!doctype html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>LDD Scripts</title>
-<meta name="description" content="LDD Scripts by LavenderDragonDesign">
 <meta name="theme-color" content="#0b1220">
 <script src="https://cdn.tailwindcss.com"></script>
+<style>
+/* Chrome-store style screenshot rail */
+.screenshot-rail {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+.screenshot-rail::-webkit-scrollbar {
+  height: 10px;
+}
+.screenshot-rail::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.25);
+  border-radius: 999px;
+}
+.screenshot-rail img {
+  height: 420px;
+  width: auto;
+  max-width: none;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+</style>
 </head>
 
 <body class="bg-[#0b1220] text-slate-100">
 <main class="max-w-6xl mx-auto px-4 py-10 space-y-14">
 
-<header class="space-y-2">
+<header>
   <h1 class="text-4xl font-extrabold tracking-tight">LDD Scripts</h1>
-  <p class="text-slate-300">Browser userscripts by LavenderDragonDesign</p>
+  <p class="text-slate-300 mt-2">Browser userscripts by LavenderDragonDesign</p>
 </header>
 
-<section class="flex flex-col items-center gap-3">
-  <a href="https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en" target="_blank" rel="noopener"
-     class="rounded-2xl bg-emerald-500 px-8 py-4 text-xl font-extrabold text-slate-950 shadow-lg hover:bg-emerald-400 transition">
+<section class="flex justify-center">
+  <a href="https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en" target="_blank"
+     class="rounded-2xl bg-emerald-500 px-8 py-4 text-xl font-extrabold text-slate-950 shadow-lg hover:bg-emerald-400">
     Get Tampermonkey
   </a>
-  <div class="text-xs text-slate-400">Required before installing any LDD script.</div>
 </section>
 
 <section class="flex justify-center">
   <img src="/images/prerequisite.png"
-       alt="Important prerequisite banner"
-       class="w-full max-w-4xl rounded-2xl border border-yellow-400/40 bg-black/20 shadow-lg">
+       class="w-full max-w-4xl rounded-2xl border border-yellow-400/40">
 </section>
 
-<section class="space-y-4">
-  <div>
-    <h2 class="text-2xl font-extrabold tracking-tight">Required One-Time Setup</h2>
-    <p class="mt-2 text-slate-300">Do this once per browser. After that, click Install on any script card below.</p>
-  </div>
+<section>
+  <h2 class="text-2xl font-extrabold mb-4">Required One-Time Setup</h2>
 
-  <div class="flex gap-8 overflow-x-auto pb-4">
+  <div class="screenshot-rail">
     <div class="flex flex-col items-center gap-3">
       <span class="text-sm font-semibold">1. Install Tampermonkey</span>
-      <img src="/images/tampermonkey.png" class="h-[420px] rounded-xl border border-white/10" alt="Install Tampermonkey">
+      <img src="/images/tampermonkey.png">
     </div>
 
     <div class="flex flex-col items-center gap-3">
-      <span class="text-sm font-semibold">2. Open Extensions (Puzzle Icon)</span>
-      <img src="/images/puzzle.png" class="h-[420px] rounded-xl border border-white/10" alt="Open extensions menu">
+      <span class="text-sm font-semibold">2. Open Extensions</span>
+      <img src="/images/puzzle.png">
     </div>
 
     <div class="flex flex-col items-center gap-3">
       <span class="text-sm font-semibold">3. Pin Tampermonkey</span>
-      <img src="/images/menu.png" class="h-[420px] rounded-xl border border-white/10" alt="Pin Tampermonkey">
+      <img src="/images/menu.png">
     </div>
 
     <div class="flex flex-col items-center gap-3">
-      <span class="text-sm font-semibold">4. Open Manage Extensions</span>
-      <img src="/images/manage.png" class="h-[420px] rounded-xl border border-white/10" alt="Manage extensions">
+      <span class="text-sm font-semibold">4. Manage Extensions</span>
+      <img src="/images/manage.png">
     </div>
 
     <div class="flex flex-col items-center gap-3">
-      <span class="text-sm font-semibold text-yellow-300">5. Enable Allow User Scripts</span>
-      <img src="/images/allow.png" class="h-[420px] rounded-xl border border-yellow-400/40" alt="Allow user scripts">
+      <span class="text-sm font-semibold text-yellow-300">5. Allow User Scripts</span>
+      <img src="/images/allow.png">
     </div>
   </div>
+</section>
 
-  <div class="rounded-2xl border border-yellow-400/20 bg-yellow-500/10 p-4 text-sm text-yellow-100">
-    If a script installs but “does nothing”, the <span class="font-bold">Allow User Scripts</span> toggle is almost always the reason.
+<section>
+  <h2 class="text-2xl font-extrabold mb-4">Scripts</h2>
+
+  <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+    <article class="rounded-2xl border border-white/10 bg-white/5 p-5">
+      <h3 class="text-lg font-extrabold">MD AutoUploader</h3>
+      <p class="mt-2 text-sm text-slate-300">
+        Auto upload images in MyDesigns. Supports single files, multiple selections, or full folders.
+      </p>
+      <a href="https://github.com/lavenderdragondesign/lddscripts/raw/refs/heads/main/MyDesigns%20-%20Drop%20Anywhere.js" target="_blank"
+         class="mt-4 inline-flex w-full justify-center rounded-xl bg-emerald-500 px-4 py-3 font-extrabold text-slate-950 hover:bg-emerald-400">
+        Install
+      </a>
+    </article>
   </div>
 </section>
 
-<section id="scripts" class="space-y-6">
-  <div>
-    <h2 class="text-2xl font-extrabold tracking-tight">Scripts</h2>
-    <p class="mt-2 text-slate-300">Click install — it should open directly in Tampermonkey.</p>
-  </div>
-
-  <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-
-    <!-- MD AutoUploader -->
-    <article class="rounded-2xl border border-white/10 bg-white/5 p-5 shadow-sm">
-      <div class="flex items-start justify-between gap-3">
-        <h3 class="text-lg font-extrabold leading-tight">MD AutoUploader</h3>
-        <span class="rounded-full bg-emerald-500/15 px-2 py-1 text-[10px] font-bold text-emerald-200">LIVE</span>
-      </div>
-
-      <div class="mt-3 space-y-2 text-sm text-slate-300">
-        <div>• Auto-upload images inside MyDesigns</div>
-        <div>• Supports <span class="font-semibold text-slate-100">single</span>, <span class="font-semibold text-slate-100">multiple</span>, or <span class="font-semibold text-slate-100">folder</span> drops</div>
-      </div>
-
-      <div class="mt-5">
-        <a href="https://github.com/lavenderdragondesign/lddscripts/raw/refs/heads/main/MyDesigns%20-%20Drop%20Anywhere.js" target="_blank" rel="noopener"
-           class="inline-flex w-full items-center justify-center rounded-xl bg-emerald-500 px-4 py-3 font-extrabold text-slate-950 hover:bg-emerald-400 transition">
-          Install
-        </a>
-        <div class="mt-2 text-xs text-slate-400">
-          Opens the install page in Tampermonkey (if installed).
-        </div>
-      </div>
-    </article>
-
-    <!-- Placeholder for future scripts -->
-    <article class="rounded-2xl border border-white/10 bg-white/5 p-5 opacity-70">
-      <h3 class="text-lg font-extrabold leading-tight">Add another script</h3>
-      <p class="mt-2 text-sm text-slate-300">
-        Duplicate this card and replace the Install link with your next raw GitHub link.
-      </p>
-      <div class="mt-5">
-        <a href="#" class="inline-flex w-full items-center justify-center rounded-xl bg-white/10 px-4 py-3 font-extrabold text-slate-200 hover:bg-white/15 transition">
-          Install
-        </a>
-      </div>
-    </article>
-
-    <article class="rounded-2xl border border-white/10 bg-white/5 p-5 opacity-70">
-      <h3 class="text-lg font-extrabold leading-tight">Add another script</h3>
-      <p class="mt-2 text-sm text-slate-300">
-        Cards auto-wrap and stay clean with 3, 6, 9+ scripts.
-      </p>
-      <div class="mt-5">
-        <a href="#" class="inline-flex w-full items-center justify-center rounded-xl bg-white/10 px-4 py-3 font-extrabold text-slate-200 hover:bg-white/15 transition">
-          Install
-        </a>
-      </div>
-    </article>
-
-  </div>
-</section>
-
-<footer class="mt-10 border-t border-white/10 pt-6 text-center text-xs text-slate-400">
+<footer class="border-t border-white/10 pt-6 text-center text-xs text-slate-400">
   Dev. By Andrea — Made With ❤️
 </footer>
 
