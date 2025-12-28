@@ -1,42 +1,101 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LDD Scripts</title>
-<script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LDD Scripts</title>
+  <meta name="description" content="LDD Scripts by LavenderDragonDesign" />
+  <meta name="theme-color" content="#0b1220" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-950 text-slate-100">
-<header class="border-b border-white/10">
-<div class="max-w-6xl mx-auto px-4 py-4 font-semibold">LDD Scripts</div>
-</header>
-<main class="max-w-6xl mx-auto px-4 py-12">
-<h1 class="text-3xl font-semibold mb-6">Required One-Time Setup</h1>
-<div class="flex items-start gap-6 overflow-x-auto">
-  <div class="flex flex-col items-center gap-2">
-    <span class="text-sm">Install</span>
-    <img src="/public/images/tampermonkey.png" class="h-20 border rounded">
-  </div>
-  <div class="flex flex-col items-center gap-2">
-    <span class="text-sm">Extensions</span>
-    <img src="/public/images/puzzle.png" class="h-20 border rounded">
-  </div>
-  <div class="flex flex-col items-center gap-2">
-    <span class="text-sm">Pin</span>
-    <img src="/public/images/menu.png" class="h-20 border rounded">
-  </div>
-  <div class="flex flex-col items-center gap-2">
-    <span class="text-sm">Manage</span>
-    <img src="/public/images/manage.png" class="h-20 border rounded">
-  </div>
-  <div class="flex flex-col items-center gap-2">
-    <span class="text-sm text-amber-300">Allow Scripts</span>
-    <img src="/public/images/allow.png" class="h-20 border border-amber-400 rounded">
-  </div>
-</div>
-</main>
-<footer class="border-t border-white/10 text-center text-xs text-slate-500 py-4">
-Made with ❤️ by LavenderDragonDesign
-</footer>
+
+<body class="min-h-screen bg-[#07101d] text-slate-100">
+  <main class="max-w-5xl mx-auto px-4 py-10">
+
+    <!-- Header (styled like lddextension.netlify.app) -->
+    <div class="flex items-center gap-4">
+      <div class="h-14 w-14 rounded-2xl bg-gradient-to-br from-violet-500 to-fuchsia-500 shadow-lg"></div>
+      <div>
+        <div class="text-slate-300 text-sm">LavenderDragonDesign</div>
+        <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight">
+          LDD Scripts
+        </h1>
+      </div>
+    </div>
+
+    <p class="mt-4 text-slate-300 max-w-3xl">
+      Install prerequisites first. Then you can install any LDD userscript with one click.
+    </p>
+
+    <!-- Prerequisite callout image (your screenshot) -->
+    <div class="mt-8 flex justify-center">
+      <img src="/images/prerequisite.png"
+           alt="Important prerequisite: install Tampermonkey before clicking install"
+           class="max-w-full rounded-2xl border border-yellow-400/40 bg-black/20 shadow-lg" />
+    </div>
+
+    <!-- Buttons -->
+    <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+      <a href="https://www.tampermonkey.net/"
+         target="_blank" rel="noopener"
+         class="inline-flex items-center justify-center rounded-2xl bg-white/10 px-6 py-3 font-semibold hover:bg-white/15">
+        Get Tampermonkey
+      </a>
+
+      <!-- Replace href with your .user.js install link (raw GitHub) -->
+      <a href="#"
+         class="inline-flex items-center justify-center rounded-2xl bg-emerald-500 px-6 py-3 font-extrabold text-slate-950 shadow-lg hover:bg-emerald-400">
+        🚀 Install Script
+      </a>
+    </div>
+
+    <!-- Install Steps -->
+    <section class="mt-14">
+      <h2 class="text-2xl font-extrabold tracking-tight">Install Steps</h2>
+      <p class="mt-2 text-slate-300">
+        One-time setup. After this, all LDD scripts will run normally.
+      </p>
+
+      <!-- ONE LINE STRIP (bigger) -->
+      <div class="mt-8 overflow-x-auto">
+        <div class="flex items-start gap-8 min-w-[1400px] pb-2">
+
+          <div class="flex flex-col items-center gap-3">
+            <span class="text-sm font-semibold text-slate-200">1) Install</span>
+            <img src="/images/tampermonkey.png" class="h-44 rounded-xl border border-white/10 bg-black/20 object-contain" alt="Install Tampermonkey">
+          </div>
+
+          <div class="flex flex-col items-center gap-3">
+            <span class="text-sm font-semibold text-slate-200">2) Extensions</span>
+            <img src="/images/puzzle.png" class="h-44 rounded-xl border border-white/10 bg-black/20 object-contain" alt="Open extensions menu">
+          </div>
+
+          <div class="flex flex-col items-center gap-3">
+            <span class="text-sm font-semibold text-slate-200">3) Pin</span>
+            <img src="/images/menu.png" class="h-44 rounded-xl border border-white/10 bg-black/20 object-contain" alt="Pin Tampermonkey">
+          </div>
+
+          <div class="flex flex-col items-center gap-3">
+            <span class="text-sm font-semibold text-slate-200">4) Manage</span>
+            <img src="/images/manage.png" class="h-44 rounded-xl border border-white/10 bg-black/20 object-contain" alt="Manage extension">
+          </div>
+
+          <div class="flex flex-col items-center gap-3">
+            <span class="text-sm font-extrabold text-yellow-300">5) Allow User Scripts</span>
+            <img src="/images/allow.png" class="h-44 rounded-xl border border-yellow-400/40 bg-black/20 object-contain" alt="Enable allow user scripts">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="mt-6 rounded-2xl border border-yellow-400/20 bg-yellow-500/10 p-4 text-sm text-yellow-100">
+        If a script installs but “does nothing”, the <span class="font-bold">Allow User Scripts</span> toggle is almost always the reason.
+      </div>
+    </section>
+
+    <footer class="mt-16 border-t border-white/10 pt-6 text-center text-xs text-slate-400">
+      Dev. By Andrea — Made With ❤️
+    </footer>
+  </main>
 </body>
 </html>
