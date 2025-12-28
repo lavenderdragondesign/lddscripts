@@ -1,103 +1,42 @@
-
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LDD Scripts</title>
-  <meta name="description" content="LDD Scripts by LavenderDragonDesign" />
-  <meta name="theme-color" content="#7c3aed" />
-  <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LDD Scripts</title>
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-950 text-slate-100">
-
 <header class="border-b border-white/10">
-  <div class="max-w-6xl mx-auto px-4 py-4 font-semibold">
-    LDD Scripts <span class="text-xs text-slate-400">by LavenderDragonDesign</span>
-  </div>
+<div class="max-w-6xl mx-auto px-4 py-4 font-semibold">LDD Scripts</div>
 </header>
-
-<main class="max-w-6xl mx-auto px-4 py-14 space-y-20">
-
-  <section>
-    <h1 class="text-4xl font-semibold mb-4">Required One-Time Setup</h1>
-    <p class="text-slate-300 max-w-2xl">
-      Before installing any LDD script, complete the steps below. This only needs to be done once per browser.
-    </p>
-  </section>
-
-  <!-- Steps -->
-  <section class="space-y-16">
-
-    <div class="grid md:grid-cols-2 gap-8 items-center">
-      <div>
-        <h2 class="text-xl font-semibold mb-2">1) Install Tampermonkey</h2>
-        <p class="text-slate-300 text-sm">
-          Install the Tampermonkey extension for your browser.
-        </p>
-      </div>
-      <img src="/public/images/tampermonkey.png"
-           class="rounded-lg border border-white/10 w-full max-w-xl mx-auto object-contain"
-           alt="Install Tampermonkey">
-    </div>
-
-    <div class="grid md:grid-cols-2 gap-8 items-center">
-      <div>
-        <h2 class="text-xl font-semibold mb-2">2) Open Extensions Menu</h2>
-        <p class="text-slate-300 text-sm">
-          Click the puzzle icon in your browser toolbar.
-        </p>
-      </div>
-      <img src="/public/images/puzzle.png"
-           class="rounded-lg border border-white/10 w-full max-w-xl mx-auto object-contain"
-           alt="Extensions menu">
-    </div>
-
-    <div class="grid md:grid-cols-2 gap-8 items-center">
-      <div>
-        <h2 class="text-xl font-semibold mb-2">3) Pin Tampermonkey</h2>
-        <p class="text-slate-300 text-sm">
-          Pin Tampermonkey so it is always accessible.
-        </p>
-      </div>
-      <img src="/public/images/menu.png"
-           class="rounded-lg border border-white/10 w-full max-w-xl mx-auto object-contain"
-           alt="Pin Tampermonkey">
-    </div>
-
-    <div class="grid md:grid-cols-2 gap-8 items-center">
-      <div>
-        <h2 class="text-xl font-semibold mb-2">4) Open Manage Extensions</h2>
-        <p class="text-slate-300 text-sm">
-          Open the browser extensions settings page.
-        </p>
-      </div>
-      <img src="/public/images/manage.png"
-           class="rounded-lg border border-white/10 w-full max-w-xl mx-auto object-contain"
-           alt="Manage extensions">
-    </div>
-
-    <div class="grid md:grid-cols-2 gap-8 items-center">
-      <div>
-        <h2 class="text-xl font-semibold mb-2">
-          5) Enable “Allow User Scripts”
-        </h2>
-        <p class="text-slate-300 text-sm">
-          This setting is required for all userscripts to run.
-        </p>
-      </div>
-      <img src="/public/images/allow.png"
-           class="rounded-lg border border-amber-400/30 w-full max-w-xl mx-auto object-contain"
-           alt="Allow user scripts">
-    </div>
-
-  </section>
-
+<main class="max-w-6xl mx-auto px-4 py-12">
+<h1 class="text-3xl font-semibold mb-6">Required One-Time Setup</h1>
+<div class="flex items-start gap-6 overflow-x-auto">
+  <div class="flex flex-col items-center gap-2">
+    <span class="text-sm">Install</span>
+    <img src="/public/images/tampermonkey.png" class="h-20 border rounded">
+  </div>
+  <div class="flex flex-col items-center gap-2">
+    <span class="text-sm">Extensions</span>
+    <img src="/public/images/puzzle.png" class="h-20 border rounded">
+  </div>
+  <div class="flex flex-col items-center gap-2">
+    <span class="text-sm">Pin</span>
+    <img src="/public/images/menu.png" class="h-20 border rounded">
+  </div>
+  <div class="flex flex-col items-center gap-2">
+    <span class="text-sm">Manage</span>
+    <img src="/public/images/manage.png" class="h-20 border rounded">
+  </div>
+  <div class="flex flex-col items-center gap-2">
+    <span class="text-sm text-amber-300">Allow Scripts</span>
+    <img src="/public/images/allow.png" class="h-20 border border-amber-400 rounded">
+  </div>
+</div>
 </main>
-
 <footer class="border-t border-white/10 text-center text-xs text-slate-500 py-4">
-  Made with ❤️ by LavenderDragonDesign
+Made with ❤️ by LavenderDragonDesign
 </footer>
-
 </body>
 </html>
