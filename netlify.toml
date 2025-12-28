@@ -1,1 +1,3 @@
-[build]\n  publish = "."\n  command = ""\n
+[build]
+  publish = "."
+  command = ""
