@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         MyDesigns - Drop Anywhere (Multi-Drop Queue + Folder Drop + LDD Overlay)
-// @match        https://mydesigns.io/*
+// @match        https://https://mydesigns.io/app/listings
 // @grant        none
 // ==/UserScript==
 
