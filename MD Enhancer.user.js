@@ -1,4 +1,12 @@
-
+// ==UserScript==
+// @name         MD Enhancer
+// @namespace    https://lavenderdragondesign
+// @version      1.0.0
+// @description  LavenderDragonDesign MyDesigns Enhancer
+// @match        https://mydesigns.io/*
+// @match        https://www.mydesigns.io/*
+// @grant        none
+// ==/UserScript==
 ;(function ensureLocalTesseract(){
   try {
     if (!window.Tesseract) {
